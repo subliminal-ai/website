@@ -1,0 +1,21 @@
+export { default as SEO } from "./seo"
+export { default as Topbar } from "./topbar"
+export { default as Layout } from "./layout"
+export { default as Footer } from "./footer"
+
+export { default as Button } from "./button"
+
+export { default as Bio } from "./bio"
+export { default as Share } from "./share"
+
+export { default as Hero } from "./hero"
+export { default as Trusted } from "./trusted"
+export { default as OpenSource } from "./openSource"
+export { default as Solution } from "./solution"
+export { default as Testimonial } from "./testimonial"
+export { default as News } from "./news"
+export { default as CallTo } from "./callTo"
+export { default as Card } from "./card"
+export { default as CardNewsletter } from "./cardNewsletter"
+export { default as CardVideo } from "./cardVideo"
+export { default as Newsletter } from "./newsletter"

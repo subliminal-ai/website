@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="cta-img1" width="100" height="132" viewBox="0 0 100 132">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#c3c6ff;fill-rule:evenodd}.cls-2{fill:#858ae3}
+        </style>
+    </defs>
+    <path id="Fill-16-path-Copy" d="M100-84.223v.01L47.568-66H0v-47.789L52.43-132H100z" class="cls-1" transform="rotate(180 50 0)"/>
+    <path id="Fill-16-path-Copy-2" d="M100 18.223v-.01L47.568 0H0v47.789L52.43 66H100z" class="cls-2"/>
+</svg>
