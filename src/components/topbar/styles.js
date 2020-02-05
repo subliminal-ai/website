@@ -91,3 +91,17 @@ export const Link = styled(LinkGatsby).attrs({
     color: #2a84eb;
   }
 `
+
+export const ExternalLink = styled.a`
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1f256d;
+
+  word-wrap: none;
+  transition: color ease 200ms;
+
+  &:hover {
+    color: #2a84eb;
+  }
+`

@@ -21,10 +21,10 @@ const CardNewsletter = () => {
       <Content>
         <HeaderCard src={require("../../assets/images/send.svg")} />
 
-        <TitleCard>{text.cardNewsletter.title}</TitleCard>
-        <DescriptionCard>{text.cardNewsletter.description}</DescriptionCard>
+        <TitleCard>{text.newsletter.title}</TitleCard>
+        <DescriptionCard>{text.newsletter.description}</DescriptionCard>
 
-        <Form name="newsletter"
+        <Form name="MailingList"
           method="POST"
           data-netlify="true" >
           <input type='hidden' name='form-name' value="newsletter" />

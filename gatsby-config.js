@@ -1,12 +1,11 @@
+// Import metadata
+const site = require('./meta/site.json')
+const content = require('./meta/content.json')
+
 module.exports = {
   siteMetadata: {
-    title: `Subliminal Ai`,
-    author: `Mark Brandao`,
-    description: `Subliminal AI is a Machine Learning Consulting firm experienced in applying AI and Machine Learning to business problems.`,
-    siteUrl: `http://preview-subliminal-ai.netliify.com`,
-    social: {
-      twitter: `kabir_khan14`,
-    },
+    ...site,
+    content,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -58,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: site.analytics,
       },
     },
     `gatsby-plugin-feed`,

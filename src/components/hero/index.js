@@ -39,14 +39,12 @@ const Hero = ({
         <WrapperAction>
           <Button
             href={actionLink}
+            target="_blank"
             responsive
             bgShadow={bgColor ? bgColor : "#fff"}
           >
             {titleButton}
           </Button>
-          <Link href="/#">
-            Subliminal AI Extended <img src={arrow} alt="arrow" />
-          </Link>
         </WrapperAction>
       )}
     </Header>

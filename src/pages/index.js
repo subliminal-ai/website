@@ -1,60 +1,73 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import text from "../data/text.json"
+import { StaticQuery, graphql } from "gatsby"
 
 import {
   Layout,
   SEO,
   Hero,
   Trusted,
-  OpenSource,
+  Services,
   Solution,
   Testimonial,
   CallTo,
   News,
 } from "../components"
 
-const Index = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      heroHome: file(absolutePath: { regex: "/subliminal-hero.png/" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const Landing = ({ data, image }) => {
 
   return (
     <Layout>
       <SEO title="Home" />
       <Hero
-        title={text.hero.title.home}
-        subTitle={text.hero.subtitle.home}
-        sourceImage={data.heroHome.childImageSharp.fluid}
+        title={data.title}
+        subTitle={data.subTitle}
+        sourceImage={image}
         actionLink="/contact"
-        titleButton="Contact"
+        titleButton={data.callToText}
       />
-      <Trusted />
-      <OpenSource />
+      {/* <Trusted light/> */}
+      <Services />
       <Solution />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <News
         title="News & Announcements"
         subtitle="See updates to help you with your work, and subscribe to our monthly
           Subliminal AI newsletter to get the latest announcements sent directly
           to your inbox."
       />
-      <CallTo
+      {/* <CallTo
         title={text.callTo.title.default}
         subtitle={text.callTo.subtitle.default}
         linkTitle="Learn About The Process"
-      />
+      /> */}
     </Layout>
   )
 }
 
-export default Index
+export default () => (
+  <StaticQuery query={landingQuery} render={({ site, heroHome }) => <Landing data={site.siteMetadata.content.home} image={heroHome.childImageSharp.fluid}/>} />
+)
+
+const landingQuery = graphql`
+  query LandingQuery {
+    heroHome: file(absolutePath: { regex: "/subliminal-hero.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    site { 
+      siteMetadata {
+        content {
+          home {
+            title
+            subTitle
+            callToText
+            callToAction
+          }
+        }
+      }
+    }
+  }
+`

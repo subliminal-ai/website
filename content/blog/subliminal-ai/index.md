@@ -1,19 +1,13 @@
 ---
-title: Jose Garcia-balius On Video Games, Overcoming failure, And A Self-taught Career In Coding
-date: "2020-01-17"
-description: Any business oriented towards creating a top of the line customer experience needs a competent and comprehensive customer service department.
-author: Ghani Pradita
-hero: ./post-1.png
+title: Launching Subliminal AI
+date: "2020-01-30"
+description: Announcing the official launch of Subliminal AI, an Artificial Intelligence Consulting and Developer Tools company focused on solving practical AI for businesses and Developers.
+author: Kabir Khan
+hero: ./hero.png
 category: marketing
 ---
 
-Any business oriented towards creating a top of the line customer experience needs a competent and comprehensive customer service department. In the past, offering a reliable phone number with an informed customer service team was enough …
-
-to satisfy customers with questions and problems. However, in today’s modern world, customers tend to expect a new level of ease and speed whenever they need to contact your company with a problem. This fix-it-now attitude causes a lot of frustration with infolines and talking to consultants who are either uninformed or detached from the customer’s problems and needs.
-
-any business oriented towards creating a top of the line customer experience needs a competent and comprehensive customer service department. In the past, offering a reliable phone number with an informed customer service team was enough …
-
-to satisfy customers with questions and problems. However, in today’s modern world, customers tend to expect a new level of ease and speed whenever they need to contact your company with a problem. This fix-it-now attitude causes a lot of frustration with infolines and talking to consultants who are either uninformed or detached from the customer’s problems and needs.
+Today marks the official launch of my AI Company: Subliminal AI.
 
 ![Image 1](./image-1.png)
 

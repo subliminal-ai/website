@@ -20,33 +20,33 @@ import arrow from "../../assets/images/right-arrow-white.png"
 
 import text from "../../data/text.json"
 
-const OpenSource = () => {
+const Services = () => {
   const data = useStaticQuery(graphql`
     query {
-      card_1: file(absolutePath: { regex: "/open-source-1.png/" }) {
+      card_1: file(absolutePath: { regex: "/services-1.png/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300, maxHeight: 250) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      card_2: file(absolutePath: { regex: "/open-source-2.png/" }) {
+      card_2: file(absolutePath: { regex: "/services-2.png/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300, maxHeight: 250) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      card_3: file(absolutePath: { regex: "/open-source-3.png/" }) {
+      card_3: file(absolutePath: { regex: "/services-3.png/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300, maxHeight: 250) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      card_4: file(absolutePath: { regex: "/open-source-4.png/" }) {
+      card_4: file(absolutePath: { regex: "/services-4.png/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300, maxHeight: 250) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -56,54 +56,51 @@ const OpenSource = () => {
   return (
     <Section>
       <WrapperHeader>
-        <Title>{text.openSource.title}</Title>
-        <Subtitle>{text.openSource.subtitle}</Subtitle>
-        <Play href="/#">
-          <PlayIcon /> {text.openSource.playMove}
-        </Play>
+        <Title>{text.services.title}</Title>
+        <Subtitle>{text.services.subtitle}</Subtitle>
       </WrapperHeader>
       <WrapperCard>
         <Card bgColor="#3486fe">
           <ImageCard fluid={data.card_1.childImageSharp.fluid} />
-          <TitleCard>{text.openSource.cards.card_1.title}</TitleCard>
+          <TitleCard>{text.services.cards.card_1.title}</TitleCard>
           <DescriptionCard>
-            {text.openSource.cards.card_1.subtitle}
+            {text.services.cards.card_1.description}
           </DescriptionCard>
           <ActionCard href="/#">
-            {text.openSource.cards.card_1.action}{" "}
+            {text.services.cards.card_1.action}{" "}
             <img src={arrow} alt="arrow right" />
           </ActionCard>
         </Card>
         <Card bgColor="#4937be" translate>
           <ImageCard fluid={data.card_2.childImageSharp.fluid} />
-          <TitleCard>{text.openSource.cards.card_2.title}</TitleCard>
+          <TitleCard>{text.services.cards.card_2.title}</TitleCard>
           <DescriptionCard>
-            {text.openSource.cards.card_2.subtitle}
+            {text.services.cards.card_2.description}
           </DescriptionCard>
           <ActionCard href="/#">
-            {text.openSource.cards.card_2.action}{" "}
+            {text.services.cards.card_2.action}{" "}
             <img src={arrow} alt="arrow right" />
           </ActionCard>
         </Card>
         <Card bgColor="#3f7be6">
           <ImageCard fluid={data.card_3.childImageSharp.fluid} />
-          <TitleCard>{text.openSource.cards.card_3.title}</TitleCard>
+          <TitleCard>{text.services.cards.card_3.title}</TitleCard>
           <DescriptionCard>
-            {text.openSource.cards.card_3.subtitle}
+            {text.services.cards.card_3.description}
           </DescriptionCard>
           <ActionCard href="/#">
-            {text.openSource.cards.card_3.action}{" "}
+            {text.services.cards.card_3.action}{" "}
             <img src={arrow} alt="arrow right" />
           </ActionCard>
         </Card>
         <Card bgColor="#01185d" translate>
           <ImageCard fluid={data.card_4.childImageSharp.fluid} />
-          <TitleCard>{text.openSource.cards.card_4.title}</TitleCard>
+          <TitleCard>{text.services.cards.card_4.title}</TitleCard>
           <DescriptionCard>
-            {text.openSource.cards.card_4.subtitle}
+            {text.services.cards.card_4.description}
           </DescriptionCard>
           <ActionCard href="/#">
-            {text.openSource.cards.card_4.action}{" "}
+            {text.services.cards.card_4.action}{" "}
             <img src={arrow} alt="arrow right" />
           </ActionCard>
         </Card>
@@ -112,4 +109,4 @@ const OpenSource = () => {
   )
 }
 
-export default OpenSource
+export default Services

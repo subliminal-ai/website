@@ -1,0 +1,41 @@
+{
+    "title": "Subliminal AI",
+    "description": "At Subliminal AI we specialize in applying practical machine learning techniques to solve real problems for your business.",
+    "slogan": "Transform your business with Artificial Intelligence",
+    "siteUrl": "https://subliminal.ai",
+    "email": "kabir@subliminal.ai",
+    "author": "Kabir Khan",
+    "company": "Subliminal AI",
+    "repo": "subliminal-ai",
+    "social": {
+        "twitter": "kabir_khan14",
+        "github": "subliminal-ai"
+    },
+    "analytics": "UA-111393904-1",
+    "binderUrl": "ines/spacy-io-binder",
+    "binderBranch": "live",
+    "binderVersion": "2.2.0",
+    "navigation": [
+        { "text": "Software", "url": "/software" },
+        { "text": "Blog", "url": "/blog" },
+        { "text": "About", "url": "/about" }
+    ],
+    "footer": [
+        {
+            "label": "Subliminal AI",
+            "items": [
+                { "text": "Software", "url": "/software" },
+                { "text": "Blog", "url": "/blog" },
+                { "text": "About", "url": "/about" },
+                { "text": "Contact Us", "url": "/contact" }
+            ]
+        },
+        {
+            "label": "Connect",
+            "items": [
+                { "text": "Twitter", "url": "https://twitter.com/kabir_khan14" },
+                { "text": "GitHub", "url": "https://github.com/subliminal-ai" }
+            ]
+        }
+    ]
+}

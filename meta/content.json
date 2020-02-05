@@ -1,0 +1,133 @@
+{
+    "contactButtonText": "Contact Us",
+    "home": {
+      "title": "Transform your business with Artificial Intelligence",
+      "subTitle": "At Subliminal AI we specialize in applying practical machine learning techniques to solve real problems for your business.",
+      "callToText": "Contact Us",
+      "callToAction": "/contact"
+    },
+    "software": {
+      "title": "Use Our Code Yourself",
+      "subTitle": "At Subliminal AI we work on a large variety of Machine Learning Projects. We work hard to open source the knowledge we gain from these projects.",
+      "callToText": "Software on Github",
+      "callToAction": "https://github.com/subliminal-ai"
+    },
+    "about": {
+      "title": "Who we are",
+      "subTitle": "Subliminal AI is a small AI Consulting firms making it easy for businesses to apply AI to their products.",
+      "callToText": "Contact Us",
+      "callToAction": "/contact"
+    },
+    "contact": {
+      "title": "Let’s Talk About AI! Schedule a call with an AI Expert.",
+      "subTitle": "Have a project in mind? Or just curious about AI? Let’s connect to discuss your needs and determine if AI is a fit for your use case."
+    },
+    "blog": {
+      "title": "We write about Machine Learning and AI",
+      "subTitle": "Read our take on Machine Learning and AI use cases, tools, best practices, and more."
+    },
+    "callTo": {
+      "title": {
+        "default": "Got A Project Idea? Schedule a quick 15-minute call to speak to an expert.",
+        "contact": "Schedule A 15-min Call With An AI Expert"
+      },
+      "subtitle": {
+        "default": "Find out how Data Science Consulting can help your business. Estimate the time and budget needed to develop a solution. Learn more about our expertise and capabilities.",
+        "contact": "Have a project in mind? Or just curious about AI? Let’s connect to discuss your needs and determine if AI is a fit for your use case."
+      }
+    },
+    "trusted": {
+      "title": "TRUSTED BY THE WORLD’S LEADING BRANDS"
+    },
+    "testimonial": {
+      "title": "Experience the People Search Difference",
+      "subtitle": "See what people like you are saying about BeenVerified",
+      "cards": [
+        {
+          "id": 1,
+          "name": "Jon Snow",
+          "office": "Founder & CEO @Tonquin",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+        },
+        {
+          "id": 2,
+          "name": "Jon Snow",
+          "office": "Founder & CEO @Tonquin",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+        },
+        {
+          "id": 3,
+          "name": "Jon Snow",
+          "office": "Founder & CEO @Tonquin",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+        }
+      ]
+    },
+    "solution": {
+      "title": "How we do it",
+      "subtitle": "At Subliminal AI, our goal is to make a substantial positive impact on the bottom line of your business as soon as possible. To make sure this happens, we follow a structured process for all our AI projects.",
+      "cards": {
+        "card_1": {
+          "number": "01",
+          "title": "Data strategy and Understanding",
+          "description": "For new customers, it's important for us to get a holistic understanding of the data sources in your company, identify what's useful now and what isn't and provide clarity on cleaning up currently unusable data so it can be utilized in future analysis.",
+          "output": "Output: Recommendations for multiple future projects that will have the highest impact."
+        },
+        "card_2": {
+          "number": "02",
+          "title": "Identify the highest value project and build a proof of concept",
+          "description": "Every AI problem is difficult to get right the first time. We start by developing a good baseline model and solution that can be improved on over time. This ensures that the business idea is actually possible",
+          "output": "Output: A working proof of concept solution that can be evaluated and tested easily."
+        },
+        "card_3": {
+          "number": "03",
+          "title": "Move the proof of concept into production",
+          "description": "So we've ensured our idea will work and has potential, now is the time to collect more data and improve the models we've developed in the proof of concept so you know you can trust the model to drive the most",
+          "output": "Output: A polished, high performing model, integrated into your existing business application or data platform."
+        }
+      }
+    },
+    "services": {
+      "title": "What we do",
+      "subtitle": "At Subliminal AI, we have experience delivering many forms of intelligent systems. Here's what we can do for your company.",
+      "playMove": "WATCH THE FILM",
+      "cards": {
+        "card_1": {
+          "title": "Natural Language Processing (NLP)",
+          "description": "We specialize in creating structured knowledge from unstructured text.",
+          "action": "See Cases"
+        },
+        "card_2": {
+          "title": "Computer Vision",
+          "description": "Does your company have a lot of images or videos? Turn that raw media into structured",
+          "action": "See Cases"
+        },
+        "card_3": {
+          "title": "Data Analysis & Predictive Analytics",
+          "description": "Whatever form your data is in, we can work with you to clean, augment, and analyze it to provide you with intelligent insights and predictive power.",
+          "action": "See Cases"
+        },
+        "card_4": {
+          "title": "End-to-end Software Development",
+          "description": "Machine Learning is only useful if you can actually integrate it into your product. We understand the importance of software development practices and will work to integrate any models we create directly into your business applications.",
+          "action": "See Cases"
+        }
+      }
+    },
+    "newsletter": {
+      "title": "Sign Up For Our Newsletter.",
+      "subtitle": "Monthly hand-picked discoveries and stories of thriving in a new world of design. GIFs (often) included.",
+      "action": "Send"
+    },
+    "bio": {
+      "title": "ABOUT THE AUTHOR",
+      "description": "I'm the Founder of Subliminal AI. I love using AI to solve real problems, not just to achieve SOTA results on research benchmarks.",
+      "author": "Kabir Khan"
+    },
+    "footer": {
+      "inTouch": {
+        "title": "STAY IN TOUCH",
+        "description": "Join our Mailing list to get updates. We respect your privacy and will never send you spam."
+      }
+    }
+  }

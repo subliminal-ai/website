@@ -96,10 +96,11 @@ const Solution = () => {
               <DescriptionCard>
                 {text.solution.cards.card_2.description}
               </DescriptionCard>
-              <ActionCard>
-                {text.solution.cards.card_2.action}{" "}
-                <img src={arrow} alt="..." />
-              </ActionCard>
+              <Line />
+              <Media>
+                <img src={verifed} alt="..." />
+                <p>{text.solution.cards.card_1.output}</p>
+              </Media>
             </Card>
           </Col>
         </Wrapper>
@@ -118,10 +119,11 @@ const Solution = () => {
               <DescriptionCard>
                 {text.solution.cards.card_3.description}
               </DescriptionCard>
-              <ActionCard>
-                {text.solution.cards.card_3.action}{" "}
-                <img src={arrow} alt="..." />
-              </ActionCard>
+              <Line />
+              <Media>
+                <img src={verifed} alt="..." />
+                <p>{text.solution.cards.card_1.output}</p>
+              </Media>
             </Card>
           </Col>
         </Wrapper>

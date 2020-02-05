@@ -79,7 +79,7 @@ const Footer = () => (
     <FooterNote>
       <Logo src={logo} />
       <Language>
-        English <IconGlobe /> &nbsp;&nbsp;&nbsp;&nbsp; United State{" "}
+        English <IconGlobe /> &nbsp;&nbsp;&nbsp;&nbsp; United States{" "}
         <img src={require("../../assets/images/usa.svg")} alt='...' />
       </Language>
       <Copy>© 2020 Subliminal AI. All rights reserved</Copy>

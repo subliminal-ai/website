@@ -2,16 +2,9 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { useMediaQuery } from "react-responsive"
 
-import HamburguerButton from "./hamburguerButton"
-import { Wrapper, Logo, Nav, List, Item, Link, Container } from "./styles"
-
-const routes = [
-  { to: "/#features", title: "Features" },
-  { to: "/#resource", title: "Resource" },
-  { to: "/blog", title: "Blog" },
-  { to: "/#learn-more", title: "Learn More" },
-  { to: "/contact", title: "Contact" },
-]
+import HamburgerButton from "./hamburguerButton"
+import { Wrapper, Logo, Nav, List, Item, Link, Container, ExternalLink } from "./styles"
+import Button from '../button'
 
 const Topbar = ({ isContactPage, bgColorTopbar }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,6 +16,17 @@ const Topbar = ({ isContactPage, bgColorTopbar }) => {
         childImageSharp {
           fixed(width: 197) {
             ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          navigation {
+            text
+            url 
+          }
+          content {
+            contactButtonText
           }
         }
       }
@@ -38,17 +42,24 @@ const Topbar = ({ isContactPage, bgColorTopbar }) => {
           <Logo fixed={data.logo.childImageSharp.fixed} />
         </Link>
 
-        {isMobile && <HamburguerButton setIsOpen={setIsOpen} isOpen={isOpen} />}
+        {isMobile && <HamburgerButton setIsOpen={setIsOpen} isOpen={isOpen} />}
 
         <Nav isOpen={isOpen}>
           <List>
-            {routes.map(({ to, title }) => (
-              <Item key={to}>
-                <Link to={to} onClick={isMobile ? handleClick : null}>
-                  {title}
-                </Link>
+            {data.site.siteMetadata.navigation.map(({ text, url }) => (
+              <Item key={url}>
+                {url.startsWith("https") ? (
+                  <ExternalLink href={url} target="_blank">{text}</ExternalLink>
+                ) : (
+                  <Link to={url} onClick={isMobile ? handleClick : null}>
+                    {text}
+                  </Link>
+                )}
               </Item>
             ))}
+            <Item>
+              <Button>{data.site.siteMetadata.content.contactButtonText}</Button>
+            </Item>
           </List>
         </Nav>
       </Wrapper>

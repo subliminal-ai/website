@@ -4,11 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import text from "../../data/text.json"
 
 import { Layout, SEO, Trusted, Hero, CallTo } from "../../components"
-import WorkTogether from "../../components/workTogether"
-import DontLikeForm from "../../components/dontLikeForm"
 import LetsTalk from "../../components/letsTalk"
 
-// import { Container } from './styles';
 
 const Contact = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -32,20 +29,10 @@ const Contact = ({ location }) => {
         bgColor="#fff6ef"
         textAlignLeft
         smallImageNone
-        actionLink="https://calendly.com/kabirkhan/30min"
+        actionLink="https://calendly.com/kabirkhan/15min"
         titleButton="Schedule A Call"
       />
       <LetsTalk />
-
-      <CallTo
-        isContactPage
-        title={text.callTo.title.home}
-        subtitle={text.callTo.subtitle.home}
-        linkTitle="Chat with us"
-      />
-
-      <WorkTogether />
-      <DontLikeForm />
       <Trusted light />
     </Layout>
   )
