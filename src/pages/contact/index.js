@@ -33,7 +33,6 @@ const Contact = ({ location }) => {
         titleButton="Schedule A Call"
       />
       <LetsTalk />
-      <Trusted light />
     </Layout>
   )
 }
