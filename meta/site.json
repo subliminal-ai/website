@@ -18,7 +18,6 @@
     "navigation": [
         { "text": "Software", "url": "/software" },
         { "text": "Blog", "url": "/blog" }
-        // { "text": "About", "url": "/about" }
     ],
     "footer": [
         {
