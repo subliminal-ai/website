@@ -5,6 +5,7 @@ import text from "../../data/text.json"
 
 import { Layout, SEO, Trusted, Hero, CallTo } from "../../components"
 import LetsTalk from "../../components/letsTalk"
+import '@duckdoc/termynal/termynal.css'
 
 
 const Software = ({ data, image }) => {
@@ -15,8 +16,14 @@ const Software = ({ data, image }) => {
       <Hero
         title={data.title}
         subTitle={data.subTitle}
-        sourceImage={image}
         textAlignLeft
+        rightContent={
+          <div style={{minHeight: '50vh'}} id="termynal" data-termynal data-termynal-container>
+            <span data-ty="input">pip install synthesize</span>
+            <span data-ty="progress"></span>
+            <span data-ty>Successfully installed synthesize</span>
+          </div>
+        }
         smallImageNone
         actionLink={data.callToAction}
         titleButton={data.callToText}

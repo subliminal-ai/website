@@ -17,7 +17,9 @@ const About = ({ data, image }) => {
         actionLink={data.about.callToAction}
         titleButton={data.about.callToText}
       />
-      <People people={[data.bio]}/>
+      <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
+        <People people={[data.bio]}/>
+      </div>
     </Layout>
   )
 }
@@ -28,7 +30,7 @@ export default () => (
 
 const aboutQuery = graphql`
   query AboutQuery {
-    heroHome: file(absolutePath: { regex: "/subliminal-hero.png/" }) {
+    heroHome: file(absolutePath: { regex: "/logo_full.png/" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

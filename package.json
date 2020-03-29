@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "",
   "dependencies": {
+    "@duckdoc/termynal": "^1.0.0",
     "antd": "^3.26.2",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.8",
@@ -38,6 +39,7 @@
     "react-share": "^3.0.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
+    "termynal-react": "^1.0.1",
     "tiny-slider-react": "^0.4.0",
     "typeface-lato": "^0.0.75",
     "typeface-roboto": "^0.0.75",

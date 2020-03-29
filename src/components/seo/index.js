@@ -61,6 +61,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      script={[
+        {
+          src: 'https://cdn.jsdelivr.net/gh/ines/termynal@master/termynal.js',
+          'data-termynal-container': "#termynal"
+        }
+      ]}
     />
   )
 }

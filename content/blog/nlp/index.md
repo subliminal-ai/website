@@ -1,8 +1,10 @@
 ---
-title: Launching Subliminal AI
+title: Natural Language Processing
 date: "2020-01-30"
-description: Announcing the official launch of Subliminal AI, an Artificial Intelligence Consulting and Developer Tools company focused on solving practical AI for businesses and Developers.
+description: A summary of the main applications of Natural Language Processing and Understanding and how they can be applyed to different business use cases. 
 author: Kabir Khan
 hero: ./hero.png
 category: marketing
 ---
+
+Natural Language Processing is my favorite area of AI and software development. 

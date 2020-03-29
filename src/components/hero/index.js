@@ -20,6 +20,7 @@ const Hero = ({
   title,
   subTitle,
   sourceImage,
+  rightContent,
   bgColor,
   actionLink,
   titleButton,
@@ -31,7 +32,7 @@ const Hero = ({
           <Title>{title}</Title>
           <SubTitle>{subTitle}</SubTitle>
         </Headline>
-        <Image smallImageNone={smallImageNone} fluid={sourceImage} />
+        {rightContent ? rightContent : <Image smallImageNone={smallImageNone} fluid={sourceImage} />}
       </WrapperHeadline>
       {children ? (
         children

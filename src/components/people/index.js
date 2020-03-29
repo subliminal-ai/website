@@ -1,6 +1,7 @@
 import React from "react"
 import { Row, Col } from 'antd';
 import { useStaticQuery, graphql, Image } from "gatsby"
+import { List, Avatar, Icon } from 'antd';
 
 import {
   Section,
@@ -9,7 +10,6 @@ import {
   Subtitle,
   Play,
   WrapperCard,
-  Card,
   ImageCard,
   TitleCard,
   DescriptionCard,
@@ -18,8 +18,6 @@ import {
 } from "./styles"
 
 import arrow from "../../assets/images/right-arrow-white.png"
-
-import text from "../../data/text.json"
 
 const People = ({ people }) => {
   const data = useStaticQuery(graphql`
@@ -34,27 +32,59 @@ const People = ({ people }) => {
     }
   `)
 
+  const listData = [
+    {
+      name: 'Kabir Khan',
+      description: 'Kabir Khan is the founder of Subliminal AI.'
+    }
+  ]
+
+  const IconText = ({ type, text }) => (
+    <span>
+      <Icon type={type} style={{ marginRight: 8 }} />
+      {text}
+    </span>
+  );
+
   return (
-    <Section>
-      {people.map(p => (
-        <React.Fragment>
-          <Row>
-            <Col xs={12} xm={6}>
-              <Card bgColor="#3486fe">
-                <ImageCard fluid={data.kabir.childImageSharp.fluid} />
-                <TitleCard>{p.author}</TitleCard>
-                <DescriptionCard>
-                  {p.description}
-                </DescriptionCard>
-              </Card>    
-            </Col>
-            <Col xs={12} xm={6}>
-              a
-            </Col>
-          </Row>
-        </React.Fragment>
-      ))}
-    </Section>
+    <Row>
+      <Col xs={12}>
+      {/* <List
+        itemLayout="vertical"
+        size="large"
+        dataSource={listData}
+        footer={
+          <div>
+            <b>ant design</b> footer part
+          </div>
+        }
+        renderItem={item => (
+          <List.Item
+            key={item.name}
+            actions={[
+              <IconText type="star-o" text="156" key="list-vertical-star-o" />,
+              <IconText type="like-o" text="156" key="list-vertical-like-o" />,
+              <IconText type="message" text="2" key="list-vertical-message" />,
+            ]}
+            extra={
+              <img
+                width={272}
+                alt="logo"
+                src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+              />
+            }
+          >
+            <List.Item.Meta
+              // avatar={<Avatar src={item.avatar} />}
+              title={<a href={item.href}>{item.name}</a>}
+              description={item.description}
+            />
+            {item.content}
+          </List.Item>
+        )}
+      /> */}
+      </Col>
+    </Row>
   )
 }
 
