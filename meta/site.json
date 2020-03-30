@@ -16,6 +16,7 @@
     "binderBranch": "live",
     "binderVersion": "2.2.0",
     "navigation": [
+        { "text": "About", "url": "/about" },
         { "text": "Software", "url": "/software" },
         { "text": "Blog", "url": "/blog" }
     ],
@@ -23,9 +24,9 @@
         {
             "label": "Subliminal AI",
             "items": [
+                { "text": "About", "url": "/about" },
                 { "text": "Software", "url": "/software" },
                 { "text": "Blog", "url": "/blog" },
-                { "text": "About", "url": "/about" },
                 { "text": "Contact Us", "url": "/contact" }
             ]
         },

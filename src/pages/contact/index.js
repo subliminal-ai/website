@@ -12,7 +12,7 @@ const Contact = ({ location }) => {
     query {
       heroContact: file(absolutePath: { regex: "/hero-contact.png/" }) {
         childImageSharp {
-          fluid(maxWidth: 455, maxHeight: 552) {
+          fluid(maxWidth: 390, maxHeight: 500) {
             ...GatsbyImageSharpFluid
           }
         }

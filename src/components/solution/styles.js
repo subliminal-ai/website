@@ -23,11 +23,13 @@ export const Title = styled.h2`
   width: 100%;
   max-width: 410px;
   margin: 0 auto 40px;
+  font-size: 2.5em;
 `
 export const Subtitle = styled.p`
   width: 100%;
   max-width: 734px;
   margin: 0 auto 40px;
+  font-size: 1.5em;
 `
 
 export const Row = styled.div`
@@ -101,9 +103,12 @@ export const Image = styled(Img)`
   width: 100%;
   min-width: 260px;
 `
-export const TitleCard = styled.h5``
+export const TitleCard = styled.h5`
+  font-size: 1.5em;
+`
 export const DescriptionCard = styled.p`
   margin-bottom: 30px;
+  font-size: 1.2em;
 `
 
 export const ActionCard = styled.a`

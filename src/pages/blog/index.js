@@ -291,14 +291,14 @@ const Blog = () => {
             <input type="text" placeholder="Search Here…" />
             <img src={Enter} alt="..." />
           </Search>
-          <Filter>Filter By Category</Filter>
+          {/* <Filter>Filter By Category</Filter>
           <Categories>
             {categories.map((category, index, array) => (
               <LinkCategories key={category} href="#">
                 {category} {index < array.length - 1 && <Square />}{" "}
               </LinkCategories>
             ))}
-          </Categories>
+          </Categories> */}
         </WrapperSearch>
       </Hero>
       <WrapperGrid>
@@ -375,19 +375,9 @@ const Blog = () => {
               )
             })}
         </Grid>
-
-        <WrapperAction>
-          <Button href="/blog" responsive bgShadow="#fff6ef ">
-            View all Articles
-          </Button>
-          <Link href="/">
-            Subliminal AI Extended <img src={arrow} alt="arrow" />
-          </Link>
-        </WrapperAction>
       </WrapperGrid>
 
-      <Newsletter />
-      <Trusted light />
+      {/* <Newsletter /> */}
       <CallTo
         title={text.callTo.title.default}
         subtitle={text.callTo.subtitle.default}

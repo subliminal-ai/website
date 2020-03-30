@@ -1,8 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import text from "../../data/text.json"
-
 import { Layout, SEO, Trusted, Hero, CallTo } from "../../components"
 import LetsTalk from "../../components/letsTalk"
 import '@duckdoc/termynal/termynal.css'

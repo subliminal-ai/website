@@ -105,16 +105,15 @@ const BlogPostTemplate = ({ data, location }) => {
           </WrapperInfo>
         </Hero>
         <ContentPost dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Footer>
+        {/* <Footer>
           <Share socialConfig={socialConfig} />
           <Line />
           <Bio />
           <Line />
           <Disqus config={disqusConfig} />
-        </Footer>
+        </Footer> */}
       </article>
-      <News title="Read Similar Post" />
-      <Trusted light />
+      <News title="Read similar posts" />
       <CallTo
         title={text.callTo.title.default}
         subtitle={text.callTo.subtitle.default}

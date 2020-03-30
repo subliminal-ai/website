@@ -1,6 +1,8 @@
 import React from "react"
 import { Row, Col } from 'antd';
 import { useStaticQuery, graphql, Image } from "gatsby"
+import Img from "gatsby-image"
+
 import { List, Avatar, Icon } from 'antd';
 
 import {
@@ -19,19 +21,8 @@ import {
 
 import arrow from "../../assets/images/right-arrow-white.png"
 
-const People = ({ people }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      kabir: file(absolutePath: { regex: "/services-1.png/" }) {
-        childImageSharp {
-          fluid(maxWidth: 300, maxHeight: 250) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
+const People = ({ people, image }) => {
+  
   const listData = [
     {
       name: 'Kabir Khan',
@@ -47,44 +38,25 @@ const People = ({ people }) => {
   );
 
   return (
-    <Row>
-      <Col xs={12}>
-      {/* <List
-        itemLayout="vertical"
-        size="large"
-        dataSource={listData}
-        footer={
-          <div>
-            <b>ant design</b> footer part
+    <React.Fragment>
+      <Row>
+        <Col xs={24}>
+          <h1 style={{textAlign: 'center', fontSize: '2em'}}>
+            Our Team
+          </h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={24} sm={12}>
+          <div style={{padding: '20px'}}>
+            <Img fluid={image} />
           </div>
-        }
-        renderItem={item => (
-          <List.Item
-            key={item.name}
-            actions={[
-              <IconText type="star-o" text="156" key="list-vertical-star-o" />,
-              <IconText type="like-o" text="156" key="list-vertical-like-o" />,
-              <IconText type="message" text="2" key="list-vertical-message" />,
-            ]}
-            extra={
-              <img
-                width={272}
-                alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-              />
-            }
-          >
-            <List.Item.Meta
-              // avatar={<Avatar src={item.avatar} />}
-              title={<a href={item.href}>{item.name}</a>}
-              description={item.description}
-            />
-            {item.content}
-          </List.Item>
-        )}
-      /> */}
-      </Col>
-    </Row>
+        </Col>
+        <Col xs={24} sm={12}>
+          <h3>Kabir Khan</h3>
+        </Col>
+      </Row>
+    </React.Fragment>
   )
 }
 

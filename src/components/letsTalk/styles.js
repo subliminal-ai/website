@@ -1,4 +1,8 @@
 import styled from "styled-components"
+import { Button, Input } from 'antd'
+
+const { TextArea } = Input;
+
 
 export const Section = styled.section`
   padding: 50px 30px 0;
@@ -49,15 +53,22 @@ export const Col = styled.div`
   }
 `
 
+export const ContentWrapper = styled.div`
+  margin-top: 100px;
+`
+
 export const Title = styled.h3`
-  margin-bottom: 30px;
   display: inline-block;
+  font-size: 2em;
+`
+export const SubTitle = styled.p`
+  margin-bottom: 40px;
+  font-size: 1.5em;
 `
 export const FormTitle = styled.h2`
   margin-bottom: 30px;
   display: inline-block;
 `
-export const SubTitle = styled.p``
 export const Card = styled.div`
   border-radius: 20px;
   box-shadow: 0 40px 99px 0 rgba(139, 139, 139, 0.16);
@@ -67,31 +78,48 @@ export const Card = styled.div`
   & label > p {
     margin-bottom: 15px;
   }
+`
 
-  & input,
-  & textarea {
-    border-radius: 10px;
-    border: solid 2px #d6d7e2;
-    width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 40px;
+export const StyledInput = styled(Input)`
+  border-radius: 10px;
+  border: solid 2px #d6d7e2;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 40px;
 
-    &::placeholder {
-      color: #66647e;
-      line-height: 4;
-    }
+  &::placeholder {
+    color: #66647e;
+    line-height: 4;
   }
+`
 
-  & input[type="submit"],
-  & button[type="submit"] {
-    background-color: #2a84eb;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    width: 100%;
+export const StyledTextArea = styled(TextArea)`
+  border-radius: 10px;
+  border: solid 2px #d6d7e2;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 40px;
 
-    &:hover {
-      background-color: #2a84eb;
-    }
+  &::placeholder {
+    color: #66647e;
+    line-height: 4;
   }
+`
+
+// & input,
+//   & textarea {
+//     border-radius: 10px;
+//     border: solid 2px #d6d7e2;
+//     width: 100%;
+//     padding: 10px 20px;
+//     margin-bottom: 40px;
+
+//     &::placeholder {
+//       color: #66647e;
+//       line-height: 4;
+//     }
+//   }
+
+export const SubmitButton = styled(Button)`
+  width: 100%;
 `

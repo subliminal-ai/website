@@ -58,7 +58,7 @@ const Topbar = ({ isContactPage, bgColorTopbar }) => {
               </Item>
             ))}
             <Item>
-              <Button href="/contact">{data.site.siteMetadata.content.contactButtonText}</Button>
+              <Button href="/contact" bgShadow={bgColorTopbar}>{data.site.siteMetadata.content.contactButtonText}</Button>
             </Item>
           </List>
         </Nav>

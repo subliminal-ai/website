@@ -2,13 +2,13 @@
   "hero": {
     "title": {
       "home": "Transform your business with Artificial Intelligence",
-      "contact": "Let’s Talk About AI, Schedule a call with an AI Expert",
-      "blog": "Be Part Of The Machine Learning Revolution."
+      "contact": "Let’s talk about AI, Schedule a call with an AI expert",
+      "blog": "We write about Machine Learning and AI"
     },
     "subtitle": {
       "home": "At Subliminal AI we specialize in applying practical machine learning techniques to solve real problems for your business.",
       "contact": "Have a project in mind? Or just curious about AI? Let’s connect to discuss your needs and determine if AI is a fit for your use case.",
-      "blog": "The future of design is open. We’re building it. Stories, news, and tips from behind the artboards."
+      "blog": "Read our take on Machine Learning and AI use cases, tools, best practices, and more."
     }
   },
   "callTo": {

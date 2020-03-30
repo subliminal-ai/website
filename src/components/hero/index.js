@@ -32,7 +32,7 @@ const Hero = ({
           <Title>{title}</Title>
           <SubTitle>{subTitle}</SubTitle>
         </Headline>
-        {rightContent ? rightContent : <Image smallImageNone={smallImageNone} fluid={sourceImage} />}
+        {rightContent ? rightContent : <Image smallImageNone={smallImageNone} fluid={sourceImage}/>}
       </WrapperHeadline>
       {children ? (
         children

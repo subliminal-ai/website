@@ -100,10 +100,12 @@ export const Image = styled(Img).attrs({
 
   @media (min-width: 600px) {
     display: block;
-    width: 455px;
+    width: 100%;
+    max-width: 455px;
   }
   @media (min-width: 900px) {
-    width: 600px;
+    width: 100%;
+    max-width: 550px;
   }
 `
 

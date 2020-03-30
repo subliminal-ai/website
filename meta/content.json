@@ -7,7 +7,7 @@
       "callToAction": "/contact"
     },
     "software": {
-      "title": "Use Our Code Yourself",
+      "title": "Use our code yourself",
       "subTitle": "At Subliminal AI we work on a large variety of Machine Learning Projects. We work hard to open source the knowledge we gain from these projects.",
       "callToText": "Software on Github",
       "callToAction": "https://github.com/subliminal-ai"
@@ -19,7 +19,7 @@
       "callToAction": "/contact"
     },
     "contact": {
-      "title": "Let’s Talk About AI! Schedule a call with an AI Expert.",
+      "title": "Let’s talk about AI! Schedule a call with an AI Expert.",
       "subTitle": "Have a project in mind? Or just curious about AI? Let’s connect to discuss your needs and determine if AI is a fit for your use case."
     },
     "blog": {
