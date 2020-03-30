@@ -55,15 +55,16 @@ export const Col = styled.div`
 
 export const ContentWrapper = styled.div`
   margin-top: 100px;
+  padding: 20px;
 `
 
 export const Title = styled.h3`
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
 `
 export const SubTitle = styled.p`
   margin-bottom: 40px;
-  font-size: 1.5em;
+  font-size: 1em;
 `
 export const FormTitle = styled.h2`
   margin-bottom: 30px;
