@@ -29,7 +29,7 @@ export default createGlobalStyle`
   }
 
   h1 { font-size: 1.912em; }
-  h2 { font-size: 1.616em; }
+  h2 { font-size: 1.7em; }
   h3 { font-size: 1.471em; }
   h4 { font-size: 1.3em; }
   h5 { font-size: 1.243em; }
