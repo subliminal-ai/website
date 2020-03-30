@@ -29,9 +29,9 @@ const Button = styled.a`
     responsive &&
     css`
       @media (max-width: 600px) {
-        width: 100px;
-        height: 30px;
-        font-size: 8px;
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
         box-shadow: -6px 6px 0px -1px ${({ bgShadow }) => (bgShadow ? bgShadow : "#fff")},
           -6px 6px 0 1px #2a84eb;
       }
