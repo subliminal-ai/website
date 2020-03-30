@@ -30,6 +30,7 @@ export const Logo = styled(Img).attrs({
   },
 })`
   margin: 0;
+  z-index: 1501;
 `
 
 export const Nav = styled.nav`
