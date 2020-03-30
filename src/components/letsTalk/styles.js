@@ -56,6 +56,9 @@ export const Col = styled.div`
 export const ContentWrapper = styled.div`
   margin-top: 100px;
   padding: 20px;
+  @media (max-width: 780px) {
+    display: none;
+  }
 `
 
 export const Title = styled.h3`
@@ -85,11 +88,16 @@ export const StyledInput = styled(Input)`
   border-radius: 10px;
   border: solid 2px #d6d7e2;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 0;
+
 
   &::placeholder {
     color: #66647e;
     line-height: 4;
+  }
+
+  @media (min-width: 900px) {
+    padding: 10px 20px;
   }
 `
 
