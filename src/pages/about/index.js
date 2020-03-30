@@ -22,7 +22,7 @@ const About = ({ data, image, kabir_image }) => {
       />
       <div style={{width: '100%', marginTop: 30}}>
         <Row>
-          <Col xs={{span: 22, offset: 1}} sm={{span: 18, offset: 2}} md={{span: 12, offset: 6}}>
+          <Col xs={{span: 20, offset: 2}} sm={{span: 18, offset: 2}} md={{span: 12, offset: 6}}>
             <h2 style={{textAlign: 'center'}}>
               What we believe
             </h2>
@@ -32,9 +32,9 @@ const About = ({ data, image, kabir_image }) => {
           </Col>
         </Row>
         <Row style={{marginTop: 50}}>
-          <Col xs={{span: 24}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
+          <Col xs={{span: 20, offset: 2}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
             <h3>
-              <strong>1. Augmentation {'>'} Automation</strong>
+              1. Augmentation {'>'} Automation
             </h3>
             <p style={{marginLeft: '1em'}}>
               At Subliminal AI we believe in <strong>Augementation</strong> over <strong>Automation.</strong>&nbsp;
@@ -43,9 +43,9 @@ const About = ({ data, image, kabir_image }) => {
           </Col>
         </Row>
         <Row style={{marginTop: 50}}>
-          <Col xs={{span: 24}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
+          <Col xs={{span: 20, offset: 2}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
             <h3>
-              <strong>2. Artificial Intelligence is not Magic</strong>
+              2. Artificial Intelligence is not Magic
             </h3>
             <p style={{marginLeft: '1em'}}>
               AI is a relatively new field. It has incredible potential but it's only useful if it's easy to understand. We strive to build explainable, actionable and reliable AI products, not moonshots.
@@ -53,9 +53,9 @@ const About = ({ data, image, kabir_image }) => {
           </Col>
         </Row>
         <Row style={{marginTop: 50}}>
-          <Col xs={{span: 24}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
+          <Col xs={{span: 20, offset: 2}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
             <h3>
-              <strong>3. Quality > Speed</strong>
+              3. Quality > Speed
             </h3>
             <p style={{marginLeft: '1em'}}>
               Our priority is always to build <strong>high-quality</strong> AI solutions, not to get your project done in 2 weeks.
