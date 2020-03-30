@@ -86,7 +86,6 @@ export const StyledInput = styled(Input)`
   border: solid 2px #d6d7e2;
   width: 100%;
   padding: 10px 20px;
-  margin-bottom: 40px;
 
   &::placeholder {
     color: #66647e;
@@ -99,27 +98,12 @@ export const StyledTextArea = styled(TextArea)`
   border: solid 2px #d6d7e2;
   width: 100%;
   padding: 10px 20px;
-  margin-bottom: 40px;
 
   &::placeholder {
     color: #66647e;
     line-height: 4;
   }
 `
-
-// & input,
-//   & textarea {
-//     border-radius: 10px;
-//     border: solid 2px #d6d7e2;
-//     width: 100%;
-//     padding: 10px 20px;
-//     margin-bottom: 40px;
-
-//     &::placeholder {
-//       color: #66647e;
-//       line-height: 4;
-//     }
-//   }
 
 export const SubmitButton = styled(Button)`
   width: 100%;
