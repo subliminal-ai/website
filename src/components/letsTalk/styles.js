@@ -56,6 +56,10 @@ export const Col = styled.div`
 export const ContentWrapper = styled.div`
   margin-top: 100px;
   padding: 20px;
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 `
 
 export const Title = styled.h3`

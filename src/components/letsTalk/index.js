@@ -51,6 +51,12 @@ const LetsTalk = () => {
       .catch(error => setFormStatus(FormStatus.ERROR));
   };
 
+  // const [form] = Form.useForm();
+
+  // // React.useEffect(() => {
+  // //   form
+  // // }, []);
+
   const renderFormStatus = (_formStatus) => {
     switch(_formStatus) {
       case FormStatus.NOT_SUBMITTED:
@@ -62,7 +68,8 @@ const LetsTalk = () => {
             onFinish={handleSubmit}
             scrollToFirstError
             netlify>
-            <Form.Item 
+            <input type="hidden" name="form-name" value="contact" />
+            <Form.Item
               name="name"
               label="Full Name"
               rules={[{ required: true, message: 'Please input your Full Name' }]}>
@@ -121,7 +128,7 @@ const LetsTalk = () => {
   return (
     <Section>
       <Row>
-        <Col xs={24} md={12} order={2}>
+        <Col md={12}>
           <ContentWrapper>
             <Title>Understand AI</Title>
             <SubTitle>
@@ -139,7 +146,7 @@ const LetsTalk = () => {
             </SubTitle>
           </ContentWrapper>
         </Col>
-        <Col xs={24} md={12} order={1}>
+        <Col xs={24} md={12}>
           <Card>
             <FormTitle>Let’s talk!</FormTitle>
             {renderFormStatus(formStatus)}
