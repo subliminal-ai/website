@@ -52,7 +52,6 @@ const LetsTalk = () => {
   };
 
   const renderFormStatus = (_formStatus) => {
-    console.log("FORM STATUS", _formStatus)
     switch(_formStatus) {
       case FormStatus.NOT_SUBMITTED:
         return (
@@ -122,7 +121,7 @@ const LetsTalk = () => {
   return (
     <Section>
       <Row>
-        <Col sm={12}>
+        <Col xs={24} md={12} order={2}>
           <ContentWrapper>
             <Title>Understand AI</Title>
             <SubTitle>
@@ -140,7 +139,7 @@ const LetsTalk = () => {
             </SubTitle>
           </ContentWrapper>
         </Col>
-        <Col xs={24} sm={12}>
+        <Col xs={24} md={12} order={1}>
           <Card>
             <FormTitle>Let’s talk!</FormTitle>
             {renderFormStatus(formStatus)}

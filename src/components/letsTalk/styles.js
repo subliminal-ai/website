@@ -56,9 +56,6 @@ export const Col = styled.div`
 export const ContentWrapper = styled.div`
   margin-top: 100px;
   padding: 20px;
-  @media (max-width: 780px) {
-    display: none;
-  }
 `
 
 export const Title = styled.h3`
@@ -76,15 +73,15 @@ export const FormTitle = styled.h2`
 export const Card = styled.div`
   border-radius: 20px;
   box-shadow: 0 40px 99px 0 rgba(139, 139, 139, 0.16);
-  padding: 50px;
+  padding: 20px;
   background-color: #fff;
 
   & label > p {
     margin-bottom: 15px;
   }
 
-  @media (min-width: 600px) {
-    padding: 20px;
+  @media (min-width: 900px) {
+    padding: 50px;
   }
 `
 
