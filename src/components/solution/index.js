@@ -99,7 +99,7 @@ const Solution = () => {
               <Line />
               <Media>
                 <img src={verifed} alt="..." />
-                <DescriptionCard>{text.solution.cards.card_1.output}</DescriptionCard>
+                <DescriptionCard>{text.solution.cards.card_2.output}</DescriptionCard>
               </Media>
             </Card>
           </Col>
@@ -122,7 +122,7 @@ const Solution = () => {
               <Line />
               <Media>
                 <img src={verifed} alt="..." />
-                <DescriptionCard>{text.solution.cards.card_1.output}</DescriptionCard>
+                <DescriptionCard>{text.solution.cards.card_3.output}</DescriptionCard>
               </Media>
             </Card>
           </Col>

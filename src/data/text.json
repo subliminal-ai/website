@@ -54,14 +54,14 @@
     "cards": {
       "card_1": {
         "number": "01",
-        "title": "Data strategy and Understanding",
-        "description": "For new customers, it's important for us to get a holistic understanding of the data sources in your company, identify what's useful now and what isn't and provide clarity on cleaning up currently unusable data so it can be utilized in future analysis.",
-        "output": "Output: Recommendations for multiple future projects that will have the highest impact."
+        "title": "Data strategy and understanding",
+        "description": "For new customers, it's important for us to wholly understand your company's data sources, identify what's useful, and provide clarity on cleaning up currently unusable data so it can be utilized in future analysis.",
+        "output": "Output: Recommendations for high impact future projects."
       },
       "card_2": {
         "number": "02",
         "title": "Identify the highest value project and build a proof of concept",
-        "description": "Every AI problem is difficult to get right the first time. We start by developing a good baseline model and solution that can be improved on over time. This ensures that the business idea is actually possible",
+        "description": "Every AI problem is difficult to get right the first time. We start by developing a baseline model to be improved over time. This ensures that the business idea is possible.",
         "output": "Output: A working proof of concept solution that can be evaluated and tested easily."
       },
       "card_3": {
@@ -84,7 +84,7 @@
       },
       "card_2": {
         "title": "Computer Vision",
-        "description": "Does your company have a lot of images or videos? Turn that raw media into structured",
+        "description": "Does your company have a lot of images or videos? Turn that raw media into structured insights.",
         "action": "See Cases"
       },
       "card_3": {
