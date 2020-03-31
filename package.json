@@ -6,6 +6,7 @@
   "author": "",
   "dependencies": {
     "@duckdoc/termynal": "^1.0.0",
+    "@sendgrid/mail": "^6.5.5",
     "antd": "^4.1.0",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.8",
