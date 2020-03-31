@@ -82,13 +82,13 @@ const LetsTalk = () => {
                 name="name"
                 label="Full Name"
                 rules={[{ required: true, message: 'Please input your Full Name' }]}>
-                <StyledInput placeholder="Enter your full name..."/>
+                <StyledInput name="name" placeholder="Enter your full name..."/>
               </Form.Item>
               <Form.Item
                 name="company_name"
                 label="Company Name"
                 rules={[{ required: true, message: 'Please input your Company or Organization Name' }]}>
-                <StyledInput placeholder="Enter the name of your company..." />
+                <StyledInput name="company_name" placeholder="Enter the name of your company..." />
               </Form.Item>
               <Form.Item 
                 name="email"
@@ -97,7 +97,7 @@ const LetsTalk = () => {
                   { type: "email", message: 'Please provide a valid email address'},
                   { required: true, message: 'Please input your email' }
                 ]}>
-                <StyledInput placeholder="Enter your email..." />
+                <StyledInput name="email" placeholder="Enter your email..." />
               </Form.Item>
               <Form.Item 
                 name="project_description"
@@ -107,6 +107,7 @@ const LetsTalk = () => {
                   { min: 30, message: 'Please provide some more detail about your project.' },
                 ]}>
                 <StyledTextArea 
+                  name="project_description" 
                   placeholder="Provide a description of your project idea."
                   rows={6} />
               </Form.Item>
