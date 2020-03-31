@@ -51,60 +51,70 @@ const LetsTalk = () => {
       .catch(error => setFormStatus(FormStatus.ERROR));
   };
 
-  // const [form] = Form.useForm();
+  const [form] = Form.useForm();
 
-  // // React.useEffect(() => {
-  // //   form
-  // // }, []);
+  React.useEffect(() => {
+    console.log(Object.prototype.toString.call(form)) // [object String]
+    console.log(form.ref)
+  }, []);
 
   const renderFormStatus = (_formStatus) => {
     switch(_formStatus) {
       case FormStatus.NOT_SUBMITTED:
         return (
-          <Form
-            layout="vertical"
-            size="large"
+          <form 
             name="contact"
-            onFinish={handleSubmit}
-            scrollToFirstError
-            netlify>
-            <input type="hidden" name="form-name" value="contact" />
-            <Form.Item
-              name="name"
-              label="Full Name"
-              rules={[{ required: true, message: 'Please input your Full Name' }]}>
-              <StyledInput placeholder="Enter your full name..."/>
-            </Form.Item>
-            <Form.Item
-              name="company_name"
-              label="Company Name"
-              rules={[{ required: true, message: 'Please input your Company or Organization Name' }]}>
-              <StyledInput placeholder="Enter the name of your company..." />
-            </Form.Item>
-            <Form.Item 
-              name="email"
-              label="Email Address"
-              rules={[
-                { type: "email", message: 'Please provide a valid email address'},
-                { required: true, message: 'Please input your email' }
-              ]}>
-              <StyledInput placeholder="Enter your email..." />
-            </Form.Item>
-            <Form.Item 
-              name="project_description"
-              label="Project Description"
-              rules={[
-                { required: true, message: 'Please provide a description of your project or idea' },
-                { min: 30, message: 'Please provide some more detail about your project.' },
-              ]}>
-              <StyledTextArea 
-                placeholder="Provide a description of your project idea."
-                rows={6} />
-            </Form.Item>
-            <Form.Item>
-              <SubmitButton type="primary" htmlType="submit" size="large">Submit</SubmitButton>
-            </Form.Item>
-          </Form>
+            id="contact"
+            className="ant-form ant-form-vertical ant-form-large"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field">
+            <Form
+              layout="vertical"
+              size="large"
+              name="contact"
+              onFinish={handleSubmit}
+              scrollToFirstError
+              netlify
+              form={form}
+              component={false}>
+              <input type="hidden" name="form-name" value="contact" />
+              <Form.Item
+                name="name"
+                label="Full Name"
+                rules={[{ required: true, message: 'Please input your Full Name' }]}>
+                <StyledInput placeholder="Enter your full name..."/>
+              </Form.Item>
+              <Form.Item
+                name="company_name"
+                label="Company Name"
+                rules={[{ required: true, message: 'Please input your Company or Organization Name' }]}>
+                <StyledInput placeholder="Enter the name of your company..." />
+              </Form.Item>
+              <Form.Item 
+                name="email"
+                label="Email Address"
+                rules={[
+                  { type: "email", message: 'Please provide a valid email address'},
+                  { required: true, message: 'Please input your email' }
+                ]}>
+                <StyledInput placeholder="Enter your email..." />
+              </Form.Item>
+              <Form.Item 
+                name="project_description"
+                label="Project Description"
+                rules={[
+                  { required: true, message: 'Please provide a description of your project or idea' },
+                  { min: 30, message: 'Please provide some more detail about your project.' },
+                ]}>
+                <StyledTextArea 
+                  placeholder="Provide a description of your project idea."
+                  rows={6} />
+              </Form.Item>
+              <Form.Item>
+                <SubmitButton type="primary" htmlType="submit" size="large">Submit</SubmitButton>
+              </Form.Item>
+            </Form>
+          </form>
         )
       case FormStatus.SUCCESS:
         return (
