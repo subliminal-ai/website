@@ -82,13 +82,17 @@ export const Card = styled.div`
   & label > p {
     margin-bottom: 15px;
   }
+
+  @media (min-width: 600px) {
+    padding: 20px;
+  }
 `
 
 export const StyledInput = styled(Input)`
   border-radius: 10px;
   border: solid 2px #d6d7e2;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px;
 
 
   &::placeholder {
@@ -96,8 +100,8 @@ export const StyledInput = styled(Input)`
     line-height: 4;
   }
 
-  @media (min-width: 900px) {
-    padding: 10px 20px;
+  @media (min-width: 600px) {
+    padding: 10px;
   }
 `
 

@@ -8,10 +8,10 @@ import GlobalStyles from "../../styles/globalStyles"
 const Layout = ({ children, bgColorTopbar }) => {
   return (
     <>
+      <GlobalStyles />
       <Topbar bgColorTopbar={bgColorTopbar} />
       <main>{children}</main>
       <Footer />
-      <GlobalStyles />
     </>
   )
 }

@@ -61,8 +61,8 @@ const LetsTalk = () => {
             size="large"
             name="contact"
             onFinish={handleSubmit}
-            // onFinishFailed={onFinishFailed}
-            scrollToFirstError>
+            scrollToFirstError
+            netlify>
             <Form.Item 
               name="name"
               label="Full Name"
