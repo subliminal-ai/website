@@ -53,11 +53,6 @@ const LetsTalk = () => {
 
   const [form] = Form.useForm();
 
-  React.useEffect(() => {
-    console.log(Object.prototype.toString.call(form)) // [object String]
-    console.log(form.ref)
-  }, []);
-
   const renderFormStatus = (_formStatus) => {
     switch(_formStatus) {
       case FormStatus.NOT_SUBMITTED:
@@ -68,7 +63,11 @@ const LetsTalk = () => {
             className="ant-form ant-form-vertical ant-form-large"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            onSubmit={(e) => e.preventDefault()}>
+            onSubmit={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              form.submit();
+            }}>
             <Form
               layout="vertical"
               size="large"
