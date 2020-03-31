@@ -1,8 +1,8 @@
 {
     "contactButtonText": "Contact Us",
     "home": {
-      "title": "Transform your business with Artificial Intelligence",
-      "subTitle": "At Subliminal AI we specialize in applying practical machine learning techniques to solve real problems for your business.",
+      "title": "Transform your organization with Artificial Intelligence",
+      "subTitle": "At Subliminal AI we specialize in applying practical machine learning techniques to solve real problems for your organization.",
       "callToText": "Contact Us",
       "callToAction": "/contact"
     },
@@ -14,7 +14,7 @@
     },
     "about": {
       "title": "Who we are",
-      "subTitle": "Subliminal AI is a small AI Consulting firms making it easy for businesses to apply AI to their products.",
+      "subTitle": "At the top of the field in Natural Language Processing, with expertise in other forms of AI and Software Development, we work collaboratively with our clients to build impactful AI solutions.",
       "callToText": "Contact Us",
       "callToAction": "/contact"
     },

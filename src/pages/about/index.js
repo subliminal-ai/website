@@ -38,17 +38,17 @@ const About = ({ data, image, kabir_image }) => {
             </h3>
             <p style={{marginLeft: '1em'}}>
               At Subliminal AI we believe in <strong>Augementation</strong> over <strong>Automation.</strong>&nbsp;
-              We are <strong>not</strong> in the business of replacing your workforce with fancy AI models. We <strong>are</strong> in the business of augmenting your company's main workflows to help make each one of your employees more efficient and effective at their job.
+              We are not in the business of replacing your workforce with fancy AI models. We are in the business of augmenting your company's main workflows to help make each employee more effective at their job.
             </p>
           </Col>
         </Row>
         <Row style={{marginTop: 50}}>
           <Col xs={{span: 20, offset: 2}} sm={{span: 18, offset: 2}} md={{span:12, offset: 6}}>
             <h3>
-              2. Artificial Intelligence is not Magic
+              2. Artificial Intelligence &ne; Magic
             </h3>
             <p style={{marginLeft: '1em'}}>
-              AI is a relatively new field. It has incredible potential but it's only useful if it's easy to understand. We strive to build explainable, actionable and reliable AI products, not moonshots.
+              AI is a relatively new field, and is only as incredible as it is useful and easy to understand. We strive to build explainable, actionable and reliable AI products, not moonshots.
             </p>
           </Col>
         </Row>

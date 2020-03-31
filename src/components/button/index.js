@@ -23,6 +23,7 @@ const Button = styled.a`
   &:hover {
     box-shadow: 0 0 0 -1px ${({ bgShadow }) => (bgShadow ? bgShadow : "#fff")},
       0 0 0 #2a84eb;
+    color: #fff
   }
 
   ${({ responsive }) =>

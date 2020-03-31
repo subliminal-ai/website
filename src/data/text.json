@@ -50,7 +50,7 @@
   },
   "solution": {
     "title": "How we do it",
-    "subtitle": "At Subliminal AI, our goal is to make a substantial positive impact on the bottom line of your business as soon as possible. To make sure this happens, we follow a structured process for all our AI projects.",
+    "subtitle": "At Subliminal AI, our goal is to make a substantial positive impact on the bottom line of your business as soon as possible. To make sure this happens, we follow a structured, collaborative process for each project.",
     "cards": {
       "card_1": {
         "number": "01",
@@ -67,7 +67,7 @@
       "card_3": {
         "number": "03",
         "title": "Move the proof of concept into production",
-        "description": "So we've ensured our idea will work and has potential, now is the time to collect more data and improve the models we've developed in the proof of concept so you know you can trust the model to drive the most",
+        "description":"With your working prototype and validated idea, we'll collect more data, iteratively improve the model, and deploy your model for immediate use by your business.",
         "output": "Output: A polished, high performing model, integrated into your existing business application or data platform."
       }
     }
