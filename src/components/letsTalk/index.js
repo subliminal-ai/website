@@ -67,7 +67,8 @@ const LetsTalk = () => {
             id="contact"
             className="ant-form ant-form-vertical ant-form-large"
             data-netlify="true"
-            data-netlify-honeypot="bot-field">
+            data-netlify-honeypot="bot-field"
+            onSubmit={(e) => e.preventDefault()}>
             <Form
               layout="vertical"
               size="large"
