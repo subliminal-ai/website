@@ -5,6 +5,7 @@ description: Announcing the official launch of Subliminal AI, an Artificial Inte
 author: Kabir Khan
 hero: ./hero.png
 category: marketing
+path: /blog/subliminal-ai
 ---
 
 ![Logo](./logo_full.png)

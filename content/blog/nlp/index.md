@@ -5,6 +5,7 @@ description: A summary of the main applications of Natural Language Processing a
 author: Kabir Khan
 hero: ./hero.png
 category: Use Cases
+path: /blog/nlp
 ---
 
 Natural Language Processing is my favorite area of AI and software development. 
