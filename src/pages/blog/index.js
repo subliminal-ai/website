@@ -285,21 +285,21 @@ const Blog = () => {
         smallImageNone
         buttonsNone
       >
-        <WrapperSearch>
+        {/* <WrapperSearch>
           <Search>
             <FaSearch />
             <input type="text" placeholder="Search Here…" />
             <img src={Enter} alt="..." />
           </Search>
-          {/* <Filter>Filter By Category</Filter>
+          <Filter>Filter By Category</Filter>
           <Categories>
             {categories.map((category, index, array) => (
               <LinkCategories key={category} href="#">
                 {category} {index < array.length - 1 && <Square />}{" "}
               </LinkCategories>
             ))}
-          </Categories> */}
-        </WrapperSearch>
+          </Categories>
+        </WrapperSearch> */}
       </Hero>
       <WrapperGrid>
         <Grid>
@@ -376,8 +376,6 @@ const Blog = () => {
             })}
         </Grid>
       </WrapperGrid>
-
-      {/* <Newsletter /> */}
       <CallTo
         title={text.callTo.title.default}
         subtitle={text.callTo.subtitle.default}

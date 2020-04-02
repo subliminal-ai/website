@@ -29,7 +29,7 @@ Stay tuned for more content on our Software tools as they are released. You can 
 
 Subliminal AI will mostly focus on projects and solutions that utilize Natural Language Processing and Understanding (NLP for short). NLP is the area of AI I'm most passionate and knowledgeable about. Most of the software that we release as a company will be centered on NLP, particularly on creating and ensuring high quality data for the various NLP tasks.
 
-Read more about NLP and how your organization could benefit from it [here.](/blog/nlp)
+Read more about NLP and how your organization could benefit from it [here.](/nlp)
 
 ## Consulting
 
