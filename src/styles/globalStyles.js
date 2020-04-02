@@ -19,9 +19,9 @@ export default createGlobalStyle`
       font-size: 18px;
     }
 
-      @media (min-width: 1200px) {
+    @media (min-width: 1200px) {
       font-size: 20px;
-      }
+    }
   } 
 
   h1, h2, h3 ,h4, h5, h6 {

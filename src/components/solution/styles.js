@@ -23,13 +23,13 @@ export const Title = styled.h2`
   width: 100%;
   max-width: 410px;
   margin: 0 auto 40px;
-  font-size: 2.5em;
+  font-size: 1.5em;
 `
 export const Subtitle = styled.p`
   width: 100%;
   max-width: 734px;
   margin: 0 auto 40px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 `
 
 export const Row = styled.div`
